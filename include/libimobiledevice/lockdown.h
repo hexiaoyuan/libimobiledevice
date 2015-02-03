@@ -3,8 +3,10 @@
  * @brief Manage device preferences, start services, pairing and activation.
  * \internal
  *
+ * Copyright (c) 2009-2014 Martin S. All Rights Reserved.
+ * Copyright (c) 2014 Koby Boyango All Rights Reserved.
+ * Copyright (c) 2010 Bryan Forbes All Rights Reserved.
  * Copyright (c) 2008 Zach C. All Rights Reserved.
- * Copyright (c) 2009 Martin S. All Rights Reserved.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -328,8 +330,6 @@ lockdownd_error_t lockdownd_unpair(lockdownd_client_t client, lockdownd_pair_rec
  * Activates the device. Only works within an open session.
  * The ActivationRecord plist dictionary must be obtained using the
  * activation protocol requesting from Apple's https webservice.
- *
- * @see http://iphone-docs.org/doku.php?id=docs:protocols:activation
  *
  * @param client The lockdown client
  * @param activation_record The activation record plist dictionary
